@@ -1,4 +1,4 @@
-npm install @mui/material @emotion/react @emotion/styled
+
 In React, the `lazy` function is used for code-splitting, a technique that allows you to load only the necessary parts of your application when they are needed, rather than loading the entire application upfront. This can lead to more efficient loading times, especially for larger applications, as it helps reduce the initial bundle size.
 
 The `lazy` function enables you to dynamically import a React component, creating a separate chunk for that component. This chunk is then loaded only when the component is actually rendered in the application. This can be particularly useful for optimizing the performance of your application, especially in scenarios where some parts of the UI are not needed immediately upon the initial page load.
@@ -27,3 +27,6 @@ In this example:
 It's important to note that the `lazy` function should only be used with components that are rendered dynamically, such as inside event handlers or within conditional statements. Using `lazy` for components that are always rendered defeats the purpose of code-splitting.
 
 Additionally, `lazy` is often used in conjunction with React Router's `React.lazy(() => import('...'))` for route-based code-splitting in React applications.
+
+
+I also used Skeleton in this Example to make it visible to see the lazy loading of the data 
